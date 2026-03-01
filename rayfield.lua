@@ -300,21 +300,21 @@ local RayfieldLibrary = {
 			TextColor = Color3.fromRGB(255, 0, 0),
 
 			Background = Color3.fromRGB(0, 0, 0),
-			Topbar = Color3.fromRGB(15, 15, 15),
+			Topbar = Color3.fromRGB(0, 0, 0),
 			Shadow = Color3.fromRGB(180, 0, 0),
 
-			NotificationBackground = Color3.fromRGB(10, 10, 10),
+			NotificationBackground = Color3.fromRGB(0, 0, 0),
 			NotificationActionsBackground = Color3.fromRGB(200, 0, 0),
 
-			TabBackground = Color3.fromRGB(20, 20, 20),
+			TabBackground = Color3.fromRGB(0, 0, 0),
 			TabStroke = Color3.fromRGB(180, 0, 0),
 			TabBackgroundSelected = Color3.fromRGB(200, 0, 0),
 			TabTextColor = Color3.fromRGB(255, 0, 0),
 			SelectedTabTextColor = Color3.fromRGB(255, 255, 255),
 
-			ElementBackground = Color3.fromRGB(18, 18, 18),
-			ElementBackgroundHover = Color3.fromRGB(25, 25, 25),
-			SecondaryElementBackground = Color3.fromRGB(10, 10, 10),
+			ElementBackground = Color3.fromRGB(0, 0, 0),
+			ElementBackgroundHover = Color3.fromRGB(10, 10, 10),
+			SecondaryElementBackground = Color3.fromRGB(0, 0, 0),
 			ElementStroke = Color3.fromRGB(180, 0, 0),
 			SecondaryElementStroke = Color3.fromRGB(140, 0, 0),
 
@@ -322,7 +322,7 @@ local RayfieldLibrary = {
 			SliderProgress = Color3.fromRGB(220, 0, 0),
 			SliderStroke = Color3.fromRGB(255, 30, 30),
 
-			ToggleBackground = Color3.fromRGB(20, 20, 20),
+			ToggleBackground = Color3.fromRGB(0, 0, 0),
 			ToggleEnabled = Color3.fromRGB(210, 0, 0),
 			ToggleDisabled = Color3.fromRGB(70, 70, 70),
 			ToggleEnabledStroke = Color3.fromRGB(255, 30, 30),
@@ -330,10 +330,10 @@ local RayfieldLibrary = {
 			ToggleEnabledOuterStroke = Color3.fromRGB(160, 0, 0),
 			ToggleDisabledOuterStroke = Color3.fromRGB(45, 45, 45),
 
-			DropdownSelected = Color3.fromRGB(25, 25, 25),
-			DropdownUnselected = Color3.fromRGB(15, 15, 15),
+			DropdownSelected = Color3.fromRGB(0, 0, 0),
+			DropdownUnselected = Color3.fromRGB(0, 0, 0),
 
-			InputBackground = Color3.fromRGB(15, 15, 15),
+			InputBackground = Color3.fromRGB(0, 0, 0),
 			InputStroke = Color3.fromRGB(180, 0, 0),
 			PlaceholderColor = Color3.fromRGB(180, 0, 0)
 		},
