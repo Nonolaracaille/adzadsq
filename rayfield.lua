@@ -299,9 +299,9 @@ local RayfieldLibrary = {
 		Default = {
 			TextColor = Color3.fromRGB(255, 0, 0),
 
-			Background = Color3.fromRGB(10, 10, 10),
+			Background = Color3.fromRGB(0, 0, 0),
 			Topbar = Color3.fromRGB(15, 15, 15),
-			Shadow = Color3.fromRGB(5, 5, 5),
+			Shadow = Color3.fromRGB(180, 0, 0),
 
 			NotificationBackground = Color3.fromRGB(10, 10, 10),
 			NotificationActionsBackground = Color3.fromRGB(200, 0, 0),
@@ -3991,6 +3991,20 @@ if useStudio then
 end
 
 if CEnabled and Main:FindFirstChild('Notice') then
+	Main.Notice.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Main.Notice.Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+	-- Glow rouge autour du popup
+	local noticeStroke = Main.Notice:FindFirstChildOfClass('UIStroke') or Instance.new('UIStroke')
+	noticeStroke.Color = Color3.fromRGB(200, 0, 0)
+	noticeStroke.Thickness = 2
+	noticeStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+	noticeStroke.Parent = Main.Notice
+
+	local noticeCorner = Main.Notice:FindFirstChildOfClass('UICorner') or Instance.new('UICorner')
+	noticeCorner.CornerRadius = UDim.new(0, 8)
+	noticeCorner.Parent = Main.Notice
+
 	Main.Notice.BackgroundTransparency = 1
 	Main.Notice.Title.TextTransparency = 1
 	Main.Notice.Size = UDim2.new(0, 0, 0, 0)
@@ -3998,8 +4012,8 @@ if CEnabled and Main:FindFirstChild('Notice') then
 	Main.Notice.Visible = true
 
 
-	TweenService:Create(Main.Notice, TweenInfo.new(0.5, Enum.EasingStyle.Exponential, Enum.EasingDirection.InOut), {Size = UDim2.new(0, 280, 0, 35), Position = UDim2.new(0.5, 0, 0, -50), BackgroundTransparency = 0.5}):Play()
-	TweenService:Create(Main.Notice.Title, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {TextTransparency = 0.1}):Play()
+	TweenService:Create(Main.Notice, TweenInfo.new(0.5, Enum.EasingStyle.Exponential, Enum.EasingDirection.InOut), {Size = UDim2.new(0, 280, 0, 35), Position = UDim2.new(0.5, 0, 0, -50), BackgroundTransparency = 0}):Play()
+	TweenService:Create(Main.Notice.Title, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {TextTransparency = 0}):Play()
 end
 -- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA why :(
 --if not useStudio then
